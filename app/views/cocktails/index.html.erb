@@ -1,0 +1,10 @@
+<div class="container mt-5">
+  <h1>🐓tail</h1>
+  <% @cocktails.each do |cocktail| %>
+    <ul>
+      <li><%= link_to cocktail.name, cocktail %></li>
+    </ul>
+  <% end %>
+  <br>
+  <%= link_to 'New Cocktail', new_cocktail_path %>
+</div>

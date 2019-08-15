@@ -1,0 +1,12 @@
+<div class="container mt-5">
+  <h1>Your call</h1>
+
+  <p>
+    <strong>Name:</strong>
+    <%= @cocktail.name %>
+  </p>
+
+
+  <%= link_to 'New Cocktail', new_cocktail_path %>
+  <%= link_to 'Back', cocktails_path %>
+</div>
