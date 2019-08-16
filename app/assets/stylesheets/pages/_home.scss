@@ -1,1 +1,14 @@
 // Specific CSS for your home-page
+.container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.banner {
+  background-image: asset-url('homepage_bartender.jpg');
+  background-size: cover;
+  height: 100vh;
+  color: #eee;
+  text-align: center;
+  padding-top: 40vh;
+}

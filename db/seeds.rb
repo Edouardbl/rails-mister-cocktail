@@ -33,7 +33,7 @@ end
 end
 
 5.times do
-  Cocktail.created(
+  Cocktail.create(
     name: Faker::Artist.name
   )
 end
