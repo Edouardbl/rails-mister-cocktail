@@ -4,9 +4,19 @@
   <p>
     <strong>Name:</strong>
     <%= @cocktail.name %>
+    <br>
+    <strong>Description:</strong>
+    <% @cocktail.doses.each do |dose| %>
+      <ul>
+      <li><%= dose.description %>
+      <%= dose.ingredient.name %>
+      <%= link_to '🚽', dose_path(dose), method: :delete%></li>
+      </ul>
+    <% end %>
   </p>
 
 
-  <%= link_to 'New Cocktail', new_cocktail_path %>
-  <%= link_to 'Back', cocktails_path %>
+  <%= link_to 'New dose', new_cocktail_dose_path(@cocktail) %>
+  <br>
+  <%= link_to 'Back to cocktails', cocktails_path %>
 </div>
